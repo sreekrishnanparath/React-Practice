@@ -1,3 +1,8 @@
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@material-ui/icons/Mail';
+
+
 const content = [
     
     {
@@ -15,12 +20,32 @@ Our van sales software provides everything a modern UAE business needs to thrive
 
 const personal =[
 {
-title : "Full Stack Software Developer",
-description: `Technology has touched every nooks and corners of our lives so intrinsically that there is vast dissemination of technical knowledge in the world. Growing up in a low-income family in rural India, I initially didn’t have the means to experiment with technology. However, that only fuelled my fascination for science and innovation. I am currently working as a Senior Software Programmer in one of the leading companies in the UAE` 
-
+title : "Sreekrishnan Radhaksrishnan",
+description: `Full Stack Software Developer`, 
+contentLine1 : `this `,
+contentLine2 : `that`,
+contentLine3 : `them`,
 }
 
 ]
 
+const menuItem = [
+    {
+      text: "LinkedIn",
+      avatarIcon: <LinkedInIcon color="primary"/>,
+      path: "/Linked"
+    },
+    {
+      text: "Git",
+      avatarIcon: <GitHubIcon color="primary"/>,
+      path: "/Git"
+    },
+    {
+        text: "Mail",
+        avatarIcon: <MailIcon color="primary"/>,
+        path :"/Mail"
+      }
+  ];
 
-export {content,personal}
+
+export {content,personal,menuItem}

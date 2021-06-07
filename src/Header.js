@@ -24,7 +24,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Icon from "@material-ui/core/Icon";
 import {Works} from './Works'
 import {Profile} from './Profile'
-
+import logo from "./sr.png";
+import Avatar from '@material-ui/core/Avatar';
 
 
 const menuItem = [
@@ -100,7 +101,11 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     typography:{
         color:'#5D6D7E'
-    }
+    },
+    large: {
+      width: theme.spacing(7),
+      height: theme.spacing(7),
+    },
   }),
 );
 
@@ -122,11 +127,18 @@ const Header=()=>{
               [classes.appBarShift]: open,
             })}
           >
-            <Toolbar>             
-              <Typography variant="h6" noWrap className={clsx(classes.typography)}>
-                Sreekrishnan Radhakrishnan
+            <Toolbar>   
+            <Avatar alt="Remy Sharp" src={logo} className={classes.large} />
+            {/* <IconButton edge="start" className={classes.typography} >
+            <LinkedInIcon/>
+            <img src={logo} alt="logo"  />
+    </IconButton> */}
+              
+            {/* <img src={logo} alt="logo"  />           */}
+              {/* <Typography variant="h6" noWrap className={clsx(classes.typography)}>
+             
               </Typography>
-          
+           */}
 
               {/* {menuItem.map((menu)=>(
                   <Typography label={menu.text}  icon={menu.avatarIcon} />
@@ -166,7 +178,7 @@ const Header=()=>{
           <main className={classes.content}>
           <div className={classes.toolbar} />  
           <Profile/>
-          <Works/>        
+          {/* <Works/>         */}
           </main>
         </div>
       );
