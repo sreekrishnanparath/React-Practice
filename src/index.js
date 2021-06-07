@@ -3,10 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Switch,Route,  BrowserRouter as Router } from 'react-router-dom'
+import {Home} from './Home';
+import {Portfolio} from './Portfolio';
+import {Works} from './Works'
+import {NoFound} from './NoFound';
+import Header from './Header'
+import Navbar from './Navbar'
+import {Footer} from './Footer'
+
+
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
