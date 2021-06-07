@@ -124,7 +124,7 @@ const Header=()=>{
           >
             <Toolbar>             
               <Typography variant="h6" noWrap className={clsx(classes.typography)}>
-                Sreekrishnan Radhakrishnan hi
+                Sreekrishnan Radhakrishnan
               </Typography>
           
 
