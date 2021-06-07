@@ -22,7 +22,7 @@ const personal =[
 {
 title : "Sreekrishnan Radhaksrishnan",
 description: `Full Stack Software Developer`, 
-contentLine1 : `this `,
+contentLine1 : `Technology has the ability to influence so many lives has always inspired me. Thats why I am here! 👋 `,
 contentLine2 : `that`,
 contentLine3 : `them`,
 }

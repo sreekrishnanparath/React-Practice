@@ -11,13 +11,14 @@ import {NoFound} from './NoFound';
 import Header from './Header'
 import Navbar from './Navbar'
 import {Footer} from './Footer'
-
+import Divider from '@material-ui/core/Divider';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
+    <Divider />
     <Footer/>
   </React.StrictMode>,
   document.getElementById('root')
